@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+.mainContainer{
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+header.headerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    background-color: #4a4a40;
+    grid-column: 1 / 2;
+    width: 100%;
+}
+/* img.logo{
+    width: 100%;
+    max-height: 100px;
+} */
+.logo, .icon{
+    width: 80px;
+}
+.icon{
+    margin: 1rem;
+    transition: all 1.3s;
+}
+.icon:hover{
+    width: 5rem;
+    opacity: .8;
+    transition: all .7s;
+}
+.icon-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem;
+}
+/* #logo_link{
+    max-width: 20%;
+} */
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+nav a{
+    font-size: 1.5rem;
+    color: white;
+    background-color: #4a4a40;
+    transition: all ease .5s;
+}
+nav a:hover{
+    color: rgb(212, 212, 212);
+    transition: all ease .5s;
+    font-size: 1.49rem;
+}
+img{
+    max-width: 100%;
+}
+#background {
+    height: 725px;
+    background-color: rgb(36, 36, 36);
+    grid-column: 1 / 4;
+    color: rgb(111 112 97);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+img.mountains{
+    grid-column: 1 / 3;
+}
+section.msg{
+    grid-column: 3 / 4;
+    margin: 6rem 5rem 0rem -16rem;
+    background-color: #4a4a40;
+    box-shadow: 3px 3px rgb(6, 30, 33);
+}
+#hero-img{
+    width: 100vw;
+}
+#hero-msg{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: -100px;
+}
+h1.home-title{
+    font-size: 2.5rem;
+    color: #6f7061;
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 5px;
+}
+.rivers-card{
+    width: 100%;
+    grid-column: 1 / 2;
+    display: grid;
+}
+.camping-card{
+    width: 100%;
+    grid-column: 2 / 3;
+    display: grid;
+}
+.rapids-card{
+    width: 100%;
+    grid-column: 3 / 4;
+    display: grid;
+}
+.card-img{
+    box-shadow: 2px 2px white;
+    width: 100%;
+    box-shadow: 4px 4px rgb(111 112 97);
+    transition: all .8s;
+}
+.card-img:hover {
+    opacity: .8;
+    transition: all .8s;
+    transform: scale(1.1);
+}
+.card-title{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.button-box a, .join a{
+    color: white;
+}
+.button-box, .join{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: .5rem 1rem;
+    margin: 2rem;
+    border: solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 7rem;
+    transition: all ease .7s;
+}
+.button-box{
+    width: 8rem;
+}
+.button-box:hover{
+    color: white;
+    border: solid rgb(212, 212, 212);
+    margin-bottom: 3rem;
+    padding: .7rem 1.1rem;
+    transition: all ease .7s;
+}
+.join:hover{
+    color: white;
+    border: solid rgb(212, 212, 212);
+    margin-bottom: 3rem;
+    padding: .7rem 1.2rem;
+    transition: all ease .7s;
+}
+.msg{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: -5px 5px 0px 5px;
+    height: 4rem
+}
+.footerLinks{
+    background-color: #6f7061;
+    grid-column: 1 / 5;
+    width: 100%;
+    color: white;
+    transition: color 1s;
+}
+.footerLinks h3 a:hover{
+    color: #4a4a40;
+    transition: color 0.5s;
+}
+.redSocial{
+    grid-column: 5 / 13;
+    background-color: #4a4a40;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icono-social{
+    border: 1px #4a4a40;
+    border-radius: 50%;
+    transition: opacity .8s;
+}
+.icono-social:hover{
+    opacity: .5;
+    transition: all .8s;
+}
+/* header {
+    display: grid;
+    grid-template-columns: 150px auto;
+} */
+/* #hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+} */
+      
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+.faq-title{
+    font-size: 2.7rem;
+    margin: 4rem;
+}
+.questions-card{
+    display: flex;
+    min-width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.faq-imgs{
+    min-width: 50vw;
+}
+.img-container{
+    min-width: 50vw;
+    transition: all 1.3s;
+}
+.img-container img:hover{
+    opacity: .8;
+    transition: all .8s;
+    transform: scale(1.1);
+}
+.text-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-card h3{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+.text-card{
+    margin: 1rem 2rem;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.mid-section{
+    background-color: #f1efef;
+}

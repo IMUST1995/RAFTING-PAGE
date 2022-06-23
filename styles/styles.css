@@ -311,3 +311,44 @@ footer{
 .mid-section{
     background-color: #f1efef;
 }
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+.contactUs-title{
+    font-size: 2.7rem;
+    margin: 4rem;
+}
+form{
+    margin: 3rem;
+}
+ul{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    margin: 1rem;
+}
+.buttonForm{
+    background-color: #4a4a40;
+    color: white;
+    padding: .5rem 1.2rem;
+    transition: all ease .8s;
+    border: #35352e 1px;
+    border-radius: 20px;
+}
+.buttonForm:hover{
+    background-color: #35352e;
+    color: rgba(255, 255, 255, 0.857);
+    transition: all ease .5s;
+}
